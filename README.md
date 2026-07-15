@@ -24,12 +24,14 @@ Renumeración de la columna ID (1 a N sin huecos), conversión de columnas numé
 
 📊 Fase 2: Visualización
 
-PreguntaGráficoConclusión¿Cómo se distribuye el IMC en la población?Histograma + KDEDistribución bastante uniforme entre 18 y 40 (media 29.18, mediana 29.12), sin asimetría marcada. Buena parte de la población está en sobrepeso u obesidad.¿Cómo varía la presión arterial según el nivel de actividad física?BoxplotsMedias muy similares entre los tres grupos (sistólica 134–136 mmHg, diastólica 88–90 mmHg). No hay relación clara con la actividad física.¿Diferencias en pasos diarios entre fumadores y no fumadores?ViolinplotMedia similar (10.744 vs. 10.426). La mediana idéntica entre grupos es un artefacto de la imputación por mediana de grupo, no un patrón real.¿Relación entre horas de sueño y satisfacción con la vida?Regplot + correlaciónCorrelación prácticamente nula (r ≈ -0.005). Sin relación lineal.
+¿Cómo se distribuye el IMC en la población? Distribución bastante uniforme entre 18 y 40 (media 29.18, mediana 29.12), sin asimetría marcada. Buena parte de la población está en sobrepeso u obesidad.
+¿Cómo varía la presión arterial según el nivel de actividad física? Medias muy similares entre los tres grupos (sistólica 134–136, diastólica 88–90). No hay relación clara con la actividad física.
+¿Diferencias en pasos diarios entre fumadores y no fumadores? Media similar (10.744 vs. 10.426). La mediana idéntica entre grupos es un artefacto de la imputación por mediana de grupo, no un patrón real.
+¿Relación entre horas de sueño y satisfacción con la vida? Correlación prácticamente nula. Sin relación lineal.
 
 Gráficos adicionales: distribución por categorías de IMC y matriz de correlación entre variables numéricas (sin correlaciones fuertes entre las variables analizadas).
 
 📌 Conclusiones generales
-
 
 El dataset, tras la limpieza, queda completo (0 nulos), consistente (sin errores lógicos de presión arterial) y con tipos de datos adecuados para el análisis.
 Ninguna de las relaciones exploradas (actividad física–presión, tabaquismo–pasos, sueño–satisfacción) muestra una asociación relevante en este dataset; las diferencias entre grupos son pequeñas y, en algún caso, explicables por el propio proceso de imputación más que por un patrón real.
